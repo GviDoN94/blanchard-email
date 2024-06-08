@@ -1,54 +1,119 @@
 <!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>HTML Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-        body {
-            width: 100% !important;
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-            margin: 0;
-            padding: 0;
-            line-height: 100%;
-        }
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>HTML Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin: 0;
+      padding: 0;
+      line-height: 100%;
+    }
 
-        [style*="Open Sans"] {
-            font-family: 'Open Sans', arial, sans-serif !important;
-        }
+    [style*="Open Sans"] {
+      font-family: 'Open Sans', arial, sans-serif !important;
+    }
 
-        img {
-            outline: none;
-            text-decoration: none;
-            border: none;
-            -ms-interpolation-mode: bicubic;
-            max-width: 100% !important;
-            margin: 0;
-            padding: 0;
-            display: block;
-        }
+    img {
+      outline: none;
+      text-decoration: none;
+      border: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100% !important;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
 
-        table td {
-            border-collapse: collapse;
-        }
+    table td {
+      border-collapse: collapse;
+    }
 
-        table {
-            border-collapse: collapse;
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
-        }
-    </style>
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    .header {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .hero-img--mobile {
+      display: none !important;
+    }
+
+    @media (max-width: 620px) {
+      .table-600 {
+        width: 280px !important;
+      }
+
+      .header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      .header img {
+        width: 114px !important;
+      }
+
+      .table-480 {
+        width: 240px !important;
+      }
+
+      .table-250,
+      .table-240 {
+        width: 240px !important;
+      }
+
+      .hero-img {
+        display: none !important;
+      }
+
+      .hero-img--mobile {
+        display: block !important;
+      }
+    }
+  </style>
 </head>
 
 <body style="margin: 0; padding: 0;">
-    <div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое
-        письмо</div>
-    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+  <div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">
+    Blanchard Художественная галерея
+  </div>
+  <table cellpadding="0" cellspacing="0" class="table-600" width="600" bgcolor="#FFFFFF" align="center">
+    <tr>
+      <td>
 
-    </table>
+        <table class="table-600" cellpadding="0" cellspacing="0" width="600">
+          <tr>
+            <table cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="header" align="center" bgcolor="#000000">
+                  <img src="https://gvidon94.ru/email/blanchard/logo.svg" alt="Logo">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="hero-img" src="https://gvidon94.ru/email/blanchard/hero.jpg" alt="Main art">
+                  <img class="hero-img--mobile" src="https://gvidon94.ru/email/blanchard/hero-mobile.jpg"
+                    alt="Main art">
+                </td>
+              </tr>
+            </table>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
 </body>
 
 </html>
