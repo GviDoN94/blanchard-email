@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>HTML Template</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
+  <style type="text/css">
     body {
       width: 100% !important;
       -webkit-text-size-adjust: 100%;
@@ -47,7 +47,7 @@
     }
 
     .hero-img--mobile {
-      display: none !important;
+      display: none;
     }
 
     .text-section {
@@ -120,7 +120,19 @@
     }
 
     .advantages__list {
-      padding: 11px
+      padding-top: 11px;
+      padding-bottom: 11px;
+    }
+
+    .advantages__item {
+      display: inline-block;
+      margin-right: 27px;
+      width: 140px;
+      vertical-align: top;
+    }
+
+    .advantages__item:last-child {
+      margin-right: 0;
     }
 
     .advantages__text {
@@ -207,6 +219,16 @@
       .table-520 {
         width: 244px !important;
       }
+
+      .advantages__item {
+        margin: 0;
+        margin-bottom: 27px;
+        width: 100%;
+      }
+
+      .advantages__item:last-child {
+        margin-bottom: 0;
+      }
     }
   </style>
 </head>
@@ -225,14 +247,14 @@
               <table class="table-600" cellpadding="0" cellspacing="0" width="600">
                 <tr>
                   <td class="header" align="center" bgcolor="#000000">
-                    <img src="https://gvidon94.ru/email/blanchard/logo.svg" alt="Logo">
+                    <img src="https://gvidon94.ru/email/blanchard/logo.png" alt="Logo" />
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <img class="hero-img" src="https://gvidon94.ru/email/blanchard/hero.jpg" alt="Main art">
+                    <img class="hero-img" src="https://gvidon94.ru/email/blanchard/hero.jpg" alt="Main art" />
                     <img class="hero-img--mobile" src="https://gvidon94.ru/email/blanchard/hero-mobile.jpg"
-                      alt="Main art">
+                      alt="Main art" />
                   </td>
                 </tr>
               </table>
@@ -240,7 +262,7 @@
           </tr>
 
           <tr>
-            <td class="text-section" align="center">
+            <td class="text-section" align="center" bgcolor="#FFFFFF">
               <table class="table-520" cellpadding="0" cellspacing="0" width="520">
                 <tr>
                   <td>
@@ -284,7 +306,7 @@
                     <table class="card" cellpadding="0" cellspacing="0">
                       <tr>
                         <td class="card__img">
-                          <img src="https://gvidon94.ru/email/blanchard/art-1.jpg" alt="Поль Гоген">
+                          <img src="https://gvidon94.ru/email/blanchard/art-1.jpg" alt="Поль Гоген" />
                         </td>
                       </tr>
                       <tr>
@@ -311,7 +333,7 @@
                     <table class="card" cellpadding="0" cellspacing="0">
                       <tr>
                         <td class="card__img">
-                          <img src="https://gvidon94.ru/email/blanchard/art-2.jpg" alt="Огюст Ренуар">
+                          <img src="https://gvidon94.ru/email/blanchard/art-2.jpg" alt="Огюст Ренуар" />
                         </td>
                       </tr>
                       <tr>
@@ -338,7 +360,7 @@
                     <table class="card" cellpadding="0" cellspacing="0">
                       <tr>
                         <td class="card__img">
-                          <img src="https://gvidon94.ru/email/blanchard/art-3.jpg" alt="Клод Моне">
+                          <img src="https://gvidon94.ru/email/blanchard/art-3.jpg" alt="Клод Моне" />
                         </td>
                       </tr>
                       <tr>
@@ -365,7 +387,7 @@
                     <table class="card" cellpadding="0" cellspacing="0">
                       <tr>
                         <td class="card__img">
-                          <img src="https://gvidon94.ru/email/blanchard/art-4.jpg" alt="Эдуард Мане">
+                          <img src="https://gvidon94.ru/email/blanchard/art-4.jpg" alt="Эдуард Мане" />
                         </td>
                       </tr>
                       <tr>
@@ -392,7 +414,7 @@
                     <table class="card" cellpadding="0" cellspacing="0">
                       <tr>
                         <td class="card__img">
-                          <img src="https://gvidon94.ru/email/blanchard/art-5.jpg" alt="Винсент Ван Гог">
+                          <img src="https://gvidon94.ru/email/blanchard/art-5.jpg" alt="Винсент Ван Гог" />
                         </td>
                       </tr>
                       <tr>
@@ -418,7 +440,7 @@
           </tr>
 
           <tr>
-            <td class="advantages">
+            <td class="advantages" bgcolor="#FFFFFF">
               <table class="table-600" cellpadding="0" cellspacing="0" width="600">
                 <tr>
                   <td align="center">
@@ -435,11 +457,11 @@
                         <td class="advantages__list">
                           <table class="table-520" cellpadding="0" cellspacing="0" width="520">
                             <tr>
-                              <td align="left">
-                                <table width="140" cellpadding="0" cellspacing="0">
+                              <td>
+                                <table class="advantages__item" width="140" cellpadding="0" cellspacing="0">
                                   <tr>
                                     <td>
-                                      <img src="https://gvidon94.ru/email/blanchard/check-square.svg" alt="Icon">
+                                      <img src="https://gvidon94.ru/email/blanchard/check-square.png" alt="Icon" />
                                     </td>
                                   </tr>
                                   <tr>
@@ -448,12 +470,11 @@
                                     </td>
                                   </tr>
                                 </table>
-                              </td>
-                              <td align="center">
-                                <table width="140" cellpadding="0" cellspacing="0">
+
+                                <table class="advantages__item" width="140" cellpadding="0" cellspacing="0">
                                   <tr>
                                     <td>
-                                      <img src="https://gvidon94.ru/email/blanchard/calendar.svg" alt="Icon">
+                                      <img src="https://gvidon94.ru/email/blanchard/calendar.png" alt="Icon" />
                                     </td>
                                   </tr>
                                   <tr>
@@ -462,12 +483,11 @@
                                     </td>
                                   </tr>
                                 </table>
-                              </td>
-                              <td align="right">
-                                <table width="140" cellpadding="0" cellspacing="0">
+
+                                <table class="advantages__item" width="140" cellpadding="0" cellspacing="0">
                                   <tr>
                                     <td>
-                                      <img src="https://gvidon94.ru/email/blanchard/arrow-up-circle.svg" alt="Icon">
+                                      <img src="https://gvidon94.ru/email/blanchard/arrow-up-circle.png" alt="Icon" />
                                     </td>
                                   </tr>
                                   <tr>
@@ -516,17 +536,17 @@
                             <tr>
                               <td align="left">
                                 <a href="#">
-                                  <img src="http://gvidon94.ru/email/blanchard/vk.svg" alt="VK">
+                                  <img src="http://gvidon94.ru/email/blanchard/vk.png" alt="VK" />
                                 </a>
                               </td>
                               <td align="center">
                                 <a href="#">
-                                  <img src="http://gvidon94.ru/email/blanchard/instagram.svg" alt="Instagram">
+                                  <img src="http://gvidon94.ru/email/blanchard/instagram.png" alt="Instagram" />
                                 </a>
                               </td>
                               <td align="right">
                                 <a href="#">
-                                  <img src="http://gvidon94.ru/email/blanchard/fb.svg" alt="Facebook">
+                                  <img src="http://gvidon94.ru/email/blanchard/fb.png" alt="Facebook" />
                                 </a>
                               </td>
                             </tr>
